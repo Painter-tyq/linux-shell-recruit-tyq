@@ -124,4 +124,5 @@
 2. 不能直接批量kill所有worker，必须精准找到 worker-beta 的PID单独终止
 3. 优先使用默认 `kill`（SIGTERM）优雅结束进程，尽量避免 `kill -9`
 # 截图
-![alt text](image.png)
+![check.sh结果](images/image.png)
+
