@@ -1,14 +1,11 @@
 #!/usr/bin/env bash
 
-# Task 08: this script is intentionally buggy.
-# Usage: ./scripts/batch-copy.sh DEST FILE...
+# 第一个参数是目标目录
+DEST="$1"
 
-destination=$1
+# 剩下所有参数，全部作为待复制文件，使用 "$@" 保留空格
 shift
 
-mkdir -p $destination
-
-for file in $@
-do
-    cp $file $destination/
+for file in "$@"; do
+    cp "$file" "$DEST/"
 done
